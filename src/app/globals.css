@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
   --font-emphasize: "Climate Crisis", sans-serif;
-  --font-sans: "Montserrat", sans-serif;
+  --font-sans: "Outfit", sans-serif;
 
   --color-forest-700: #7f877d;
   --color-forest-800: #5c685b;
@@ -13,6 +14,8 @@
   --color-forest-950: #181a1b;
 
   --color-off-white: #f1f0d5;
+  --color-off-white-2: #dbdac3;
+  --color-off-white-3: #c9c9b5;
 
   --color-tan: #c4b5a3;
   --color-poop: #cc0000;
@@ -20,4 +23,8 @@
 
 .card {
   @apply p-6 rounded-2xl shadow-lg bg-off-white text-forest-850;
+}
+
+body, html {
+  background-color: var(--color-forest-900);
 }
