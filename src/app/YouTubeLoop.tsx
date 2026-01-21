@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 
 declare global {
   interface Window {
-    YT: any;
+    YT: typeof YT | undefined;
     onYouTubeIframeAPIReady: () => void;
   }
 }
@@ -18,7 +18,7 @@ const YouTubeLoop = ({
   start: number;
   end: number;
 }) => {
-  const playerRef = useRef<any>(null);
+  const playerRef = useRef<YT.Player | null>(null);
 
   useEffect(() => {
     const tag = document.createElement("script");
@@ -36,24 +36,19 @@ const YouTubeLoop = ({
           start,
         },
         events: {
-          onReady: (event: any) => {
-            event.target.playVideo();
+          onReady: (event) => {
+            const target = event.target as YT.Player;
 
-            // Start interval to loop
+            target.setPlaybackQuality("hd1080");
+            target.playVideo();
+
             const interval = setInterval(() => {
-              const currentTime = event.target.getCurrentTime();
-              if (currentTime >= end) {
-                event.target.seekTo(start);
+              if (target.getCurrentTime() >= end) {
+                target.seekTo(start, true);
+                target.setPlaybackQuality("hd1080"); // re-request
               }
-            }, 200); // check every 200ms
-
-            // Cleanup on unmount
-            return () => clearInterval(interval);
+            }, 200);
           },
-        },
-        onReady: (event: any) => {
-            event.target.setPlaybackQuality("hd1080"); // suggest 1080p
-            event.target.playVideo();
         },
       });
     };
