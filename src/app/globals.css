@@ -13,7 +13,8 @@
   --color-forest-900: #343d3b;
   --color-forest-950: #181a1b;
 
-  --color-off-white: #f1f0d5;
+  /* --color-off-white: #f1f0d5; */
+  --color-off-white: #f0efdd;
   --color-off-white-2: #dbdac3;
   --color-off-white-3: #c9c9b5;
 
@@ -22,9 +23,57 @@
 }
 
 .card {
-  @apply p-6 rounded-2xl shadow-lg bg-off-white text-forest-850;
+  /* @apply p-6 rounded-2xl shadow-lg bg-off-white text-forest-850; */
+  @apply p-6 rounded-2xl shadow-lg bg-forest-800 text-off-white;
+}
+
+.project-card {
+  @apply rounded-2xl shadow-lg bg-forest-950 text-off-white overflow-hidden cursor-pointer transition hover:scale-[1.03];
 }
 
 body, html {
   background-color: var(--color-forest-900);
+}
+
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.slide-up-fade {
+  animation: slideUpFade 0.6s cubic-bezier(.05,.66,.41,.97) forwards;
+}
+
+@keyframes slideUpFade2 {
+  0% {
+    opacity: 0;
+    transform: translateY(90px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-up-fade-2 {
+  animation: slideUpFade2 0.8s cubic-bezier(.05,.66,.41,.97) forwards;
+}
+
+@keyframes animate-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 12rem;
+  }
+}
+
+.animate-width {
+  animation: animate-width 0.6s cubic-bezier(.05,.66,.41,.97) forwards;
 }
