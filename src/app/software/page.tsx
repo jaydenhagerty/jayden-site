@@ -3,17 +3,18 @@ import CurvedDivider from "../CurvedDivider";
 function App() {
   return (
     <>
-      <div className="p-16 pt-32 bg-black">
-        <h1 className="font-bold text-forest-700 text-3xl mb-4">Big Projects</h1>
-        <section className="w-full grid grid-cols-3 gap-4 grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))]">
+      <div className="md:p-16 p-8 pt-32 md:pt-32 bg-black">
+      {/* <div className="w-full rounded-2xl bg-forest-950 p-8 shadow-xl"></div> */}
+        <h1 className="font-bold text-forest-700 text-3xl mb-4 mt-16">Big Projects</h1>
+        <section className="w-full grid grid-cols-3 gap-4 grid-cols-[repeat(auto-fit,_minmax(min(100%,_400px),_1fr))]">
           <a href="knightmare" className="project-card">
             <img className="bg-black w-full " alt="Knightmare Cover Image" src="/knightmare1.png" />
             <div className="p-6">
               <div className="flex flex-column justify-between space-x-4 items-center">
                 <h1 className="font-bold text-2xl">Knightmare</h1>
-                <p></p>
+                <p className="text-forest-700">HTML, JS, CSS</p>
               </div>
-              <p className="text-forest-700">Use a unique chess-based move set to travel through the Dream Realm.</p>
+              <p className="text-forest-700 ">Use a unique chess-based move set to travel through the Dream Realm.</p>
             </div>
           </a>
           <div className="project-card">
@@ -21,7 +22,7 @@ function App() {
             <div className="p-6">
               <div className="flex flex-column justify-between space-x-4 items-center">
                 <h1 className="font-bold text-2xl">The Train to Somewhere</h1>
-                <p></p>
+                <p className="text-forest-700">Godot</p>
               </div>
               <p className="text-forest-700">Fight monsters and explore the mysterious train.</p>
             </div>
@@ -30,16 +31,16 @@ function App() {
             <img className="bg-black w-full" alt="Redemption TGC Pocket Cover Image" src="/redemptionpocket1.png" />
             <div className="p-6">
               <div className="flex flex-column justify-between space-x-4 items-center">
-                <h1 className="font-bold text-2xl">Redemption TGC Pocket</h1>
-                <p></p>
+                <h1 className="font-bold text-2xl">Redemption Pocket</h1>
+                <p className="text-forest-700">HTML, JS, CSS</p>
               </div>
-              <p className="text-forest-700">Digital collecting for the Redemption trading card game.</p>
+              <p className="text-forest-700">A digital collectathon for the Redemption trading card game.</p>
             </div>
           </div>
         </section>
 
-        <h1 className="font-bold text-forest-700 text-3xl mb-4 mt-8">Cool Websites</h1>
-        <section className="w-full grid grid-cols-3 gap-4 grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))]">
+        <h1 className="font-bold text-forest-700 text-3xl mb-4 mt-16">Cool Websites</h1>
+        <section className="w-full grid grid-cols-3 gap-4 grid-cols-[repeat(auto-fit,_minmax(min(100%,_400px),_1fr))]">
           <a href="knightmare" className="project-card">
             <img className="bg-black w-full" alt="Knightmare Cover Image" src="/fewtube.png" />
             <div className="p-6">
@@ -77,7 +78,7 @@ function App() {
                 <h1 className="font-bold text-2xl">JJ Message</h1>
                 <p></p>
               </div>
-              <p className="text-forest-700">Fight monsters and explore the mysterious train.</p>
+              <p className="text-forest-700">Simple file encryption for sending fun secret messages.</p>
             </div>
           </div>
           
@@ -91,13 +92,54 @@ function App() {
               <p className="text-forest-700">React to video clips with your friends!</p>
             </div>
           </div>
+
+          <div className="project-card">
+            <img className="bg-black w-full" alt="Mess Cover Image" src="/mess.png" />
+            <div className="p-6">
+              <div className="flex flex-column justify-between space-x-4 items-center">
+                <h1 className="font-bold text-2xl">Mess</h1>
+                <p></p>
+              </div>
+              <p className="text-forest-700">Messaging with a twist.</p>
+            </div>
+          </div>
         </section>
 
 
-        <h1 className="font-bold text-forest-700 text-3xl mb-4 mt-8">Silly Games</h1>
-        <section className="w-full grid grid-cols-3 gap-4 grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))]">
+        <h1 className="font-bold text-forest-700 text-3xl mb-4 mt-16">Silly Games</h1>
+        <section className="w-full grid grid-cols-3 gap-4 grid-cols-[repeat(auto-fit,_minmax(min(100%,_400px),_1fr))]">
 
-
+          <div className="project-card">
+            <img className="bg-black w-full" alt="Meddle Cover Image" src="/meddle.png" />
+            <div className="p-6">
+              <div className="flex flex-column justify-between space-x-4 items-center">
+                <h1 className="font-bold text-2xl">Meddle</h1>
+                <p></p>
+              </div>
+              <p className="text-forest-700">Ever played one word story? This is that, but online, with points and a voting system.</p>
+            </div>
+          </div>
+          <div className="project-card">
+            <img className="bg-black w-full" alt="The Risk Button Cover Image" src="/risk-button.png" />
+            <div className="p-6">
+              <div className="flex flex-column justify-between space-x-4 items-center">
+                <h1 className="font-bold text-2xl">The Risk Button</h1>
+                <p></p>
+              </div>
+              <p className="text-forest-700">What will happen when you click it? Nobody knows...</p>
+            </div>
+          </div>
+          
+          <div className="project-card">
+            <img className="bg-black w-full" alt="Sort This Cover Image" src="/sort-this.png" />
+            <div className="p-6">
+              <div className="flex flex-column justify-between space-x-4 items-center">
+                <h1 className="font-bold text-2xl">Sort This</h1>
+                <p></p>
+              </div>
+              <p className="text-forest-700">It's literally just a game where you sort red and blue things.</p>
+            </div>
+          </div>
 
         </section>
 

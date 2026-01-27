@@ -28,7 +28,7 @@
 }
 
 .project-card {
-  @apply rounded-2xl shadow-lg bg-forest-950 text-off-white overflow-hidden cursor-pointer transition hover:scale-[1.03];
+  @apply w-full rounded-2xl shadow-lg bg-forest-950 text-off-white overflow-hidden cursor-pointer transition hover:scale-[1.03];
 }
 
 body, html {

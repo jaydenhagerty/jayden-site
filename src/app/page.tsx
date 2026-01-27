@@ -46,7 +46,7 @@ function App() {
 
       <div className="bg-forest-800">
 
-        <AnimateOnScroll>
+
           <section className="w-full bg-forest-800 flex items-center justify-center">
             <div className="bg-forest-800 flex flex-col md:flex-row items-stretch justify-center w-full max-w-6xl overflow-hidden relative gap-8 p-8">
               <div
@@ -69,9 +69,9 @@ function App() {
               </div>
             </div>
           </section>
-        </AnimateOnScroll>
 
-        <AnimateOnScroll>
+
+
           <section className="w-full bg-forest-800 flex items-center justify-center">
             <div className="bg-forest-800 flex flex-col md:flex-row items-stretch justify-center w-full max-w-6xl overflow-hidden relative gap-8 p-8">
               
@@ -95,10 +95,10 @@ function App() {
               />
             </div>
           </section>
-        </AnimateOnScroll>
 
 
-        <AnimateOnScroll>
+
+
           <section className="w-full bg-forest-800 flex items-center justify-center">
             <div className="bg-forest-800 flex flex-col md:flex-row items-stretch justify-center w-full max-w-6xl overflow-hidden relative gap-8 p-8">
               <div className="h-[400px] w-full object-cover rounded-2xl shadow-xl order-last md:order-first overflow-hidden">
@@ -120,7 +120,7 @@ function App() {
               </div>
             </div>
           </section>
-        </AnimateOnScroll>
+
       </div>
       
       <CurvedDivider
