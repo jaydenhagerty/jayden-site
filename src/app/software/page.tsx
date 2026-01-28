@@ -28,7 +28,7 @@ function App() {
               <p className="text-forest-700">Fight monsters and explore the mysterious train.</p>
             </div>
           </Link>
-          <div className="project-card">
+          <Link className="project-card" href="redemption-pocket">
             <img className="bg-black w-full" alt="Redemption TGC Pocket Cover Image" src="/redemptionpocket1.png" />
             <div className="p-6">
               <div className="flex flex-column justify-between space-x-4 items-center">
@@ -37,7 +37,7 @@ function App() {
               </div>
               <p className="text-forest-700">A digital collectathon for the Redemption trading card game.</p>
             </div>
-          </div>
+          </Link>
         </section>
 
 

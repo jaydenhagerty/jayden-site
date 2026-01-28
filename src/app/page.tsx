@@ -46,17 +46,9 @@ function App() {
 
           <section className="w-full bg-forest-800 flex items-center justify-center">
             <div className="bg-forest-800 flex flex-col md:flex-row items-stretch justify-center w-full max-w-6xl overflow-hidden relative gap-8 p-8">
-              <video
-                poster="/traingame1.png"
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="metadata"
-                className="h-[400px] w-full object-cover rounded-2xl shadow-xl"
-              >
-                <source src="/Jayden Site Train Reel.mov" type="video/mp4" />
-              </video>
+
+                <img src="/traingame1.png" className="h-[400px] w-full object-cover rounded-2xl shadow-xl" />
+            
 
               <div className="max-w-full md:max-w-sm rounded-2xl text-off-white flex flex-col justify-center ">
                 <h1 className="text-4xl font-emphasize">
@@ -71,7 +63,7 @@ function App() {
                   Programming started as a hobby for me when I was 10 years old. Since then, it&apos;s grown into a career path that I&apos;m incredibly  passionate about! I&apos;ll be graduating from the <b>University of Victoria</b> in 2027 with a Bachelor of Software Engineering.
                 </p>
                 <Link href="/software">
-                  <button className="w-full text-xl logo-button items-center justify-center">See My Coding Projects<img className="h-[16px]" src="right-arrow.png"/></button>
+                  <button className="button w-full text-xl logo-button items-center justify-center">See My Coding Projects<img className="h-[16px]" src="right-arrow.png"/></button>
                 </Link>
               </div>
             </div>
@@ -93,7 +85,7 @@ function App() {
                 <p className="font-medium text-justify mb-8">
                   I work on a wide variety of music projects, ranging from game/film soundtracks to singer-songwriter productions. I'm incredbilty fortunate to have amassed over <b>50,000 streams</b> across platforms like Spotify and Apple Music!
                 </p>
-                <button className="w-full text-xl logo-button items-center justify-center">Listen to My Music <img className="h-[16px]" src="right-arrow.png"/></button>
+                <button className="button w-full text-xl logo-button items-center justify-center">Listen to My Music <img className="h-[16px]" src="right-arrow.png"/></button>
               </div>
               <img 
                 src="music prod placeholder.jpg" 
@@ -105,7 +97,7 @@ function App() {
 
           <section className="w-full bg-forest-800 flex items-center justify-center">
             <div className="bg-forest-800 flex flex-col md:flex-row items-stretch justify-center w-full max-w-6xl overflow-hidden relative gap-8 p-8">
-              <video
+              {/* <video
                 poster="/willem.jpg"
                 autoPlay
                 loop
@@ -115,7 +107,9 @@ function App() {
                 className="h-[400px] w-full object-cover rounded-2xl shadow-xl"
               >
                 <source src="/Jayden Site Film Reel.mov" type="video/mp4" />
-              </video>
+              </video> */}
+              <img src="/willem.jpg" className="h-[400px] w-full object-cover rounded-2xl shadow-xl" />
+
               <div className="max-w-full md:max-w-sm rounded-2xl text-off-white flex flex-col justify-center">
                 <h1 className="text-4xl font-emphasize">
                   Filmmaker and Director
@@ -128,7 +122,7 @@ function App() {
                 <p className="font-medium text-justify mb-8">
                   Film is a combination of so many things I love, and I've managed to try unique roles in each project I've been a part of! I&apos;ve directed and produced a variety of short films- I've also been heavily involved in acting roles, script writing, cinematography, sound mixing, and video editing.
                 </p>
-                <button className="w-full text-xl logo-button items-center justify-center">Watch My Films <img className="h-[16px]" src="right-arrow.png"/></button>
+                <button className="button w-full text-xl logo-button items-center justify-center">Watch My Films <img className="h-[16px]" src="right-arrow.png"/></button>
               </div>
             </div>
           </section>

@@ -11,8 +11,8 @@ function App() {
         </Link>
         <div className="rounded-2xl shadow-lg bg-forest-950 text-off-white overflow-hidden">
           <div className="p-8">
-            <div className="flex flex-column space-x-8 items-center items-start">
-              <div className="w-5xl">
+            <div className="flex flex-col md:flex-row w-full gap-8 items-start">
+              <div className="flex-1">
 
                 {/* <img src="/knightmare logo.png" alt="Knightmare Logo" className="w-full mb-4"/> */}
                 <h1 className="font-bold text-4xl mb-2">The Train to Somewhere</h1>
@@ -28,18 +28,13 @@ function App() {
                   <p className="block mt-8 p-4 bg-forest-900 rounded-2xl">This game is just a demo for now, but it's already a memorable experience with charming pixel art, immersive sound design, and an intriguing story.</p>
                 </div>
               </div>
-              <div>
-                <video
-                poster="/traingame1.png"
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="metadata"
-                className="w-full aspect-video object-cover rounded-2xl shadow-xl"
-              >
-                <source src="/Jayden Site Train Reel.mov" type="video/mp4" />
-              </video>
+              <div className="w-full md:w-3/5 rounded-2xl overflow-hidden shadow-lg">
+                <iframe
+                  loading="lazy"
+                  className="w-full aspect-video"
+                  src="https://www.youtube.com/embed/_arPD_Utix8"
+                  title="YouTube video player"
+                ></iframe>
               </div>
             </div>
           </div>

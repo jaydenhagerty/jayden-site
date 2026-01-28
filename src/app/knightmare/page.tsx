@@ -11,8 +11,8 @@ function App() {
         </Link>
         <div className="rounded-2xl shadow-lg bg-forest-950 text-off-white overflow-hidden">
           <div className="p-8">
-            <div className="flex flex-column space-x-8 items-center items-start">
-              <div className="w-5xl">
+            <div className="flex flex-col md:flex-row w-full gap-8 items-start">
+              <div className="flex-1">
 
                 {/* <img src="/knightmare logo.png" alt="Knightmare Logo" className="w-full mb-4"/> */}
                 <h1 className="font-bold text-4xl mb-2">Knightmare</h1>
@@ -35,11 +35,11 @@ function App() {
                   <p className="block mt-3"><b>Save the Dream Realm from destruction.</b> Stop The Bishop before it's too late.</p>
                 </div>
               </div>
-              <div>
+              <div className="w-full md:w-3/5 rounded-2xl overflow-hidden shadow-lg">
                 <iframe
                   loading="lazy"
                   className="w-full aspect-video"
-                  src="https://www.youtube.com/embed/Fw2m4lJSwh4?si=vbg9cb6U1cRvL2zw"
+                  src="https://www.youtube.com/embed/Fw2m4lJSwh4"
                   title="YouTube video player"
                 ></iframe>
                 <img src="knightmare2.png" className="w-full" />
