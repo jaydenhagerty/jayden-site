@@ -68,7 +68,7 @@ function Navbar() {
         <a
           href="https://ffm.bio/jayden"
           target="_blank"
-          className="bg-off-white text-forest-800 px-4 py-2 rounded-full font-semibold transition"
+          className="button"
         >
           Contact Me!
         </a>

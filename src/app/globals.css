@@ -31,6 +31,14 @@
   @apply w-full rounded-2xl shadow-lg bg-forest-950 text-off-white overflow-hidden cursor-pointer transition hover:scale-[1.03];
 }
 
+button, .button {
+  @apply bg-off-white text-forest-800 px-4 py-2 rounded-full font-semibold transition cursor-pointer hover:scale-105;
+}
+
+.logo-button {
+  @apply flex items-center justify-center gap-2;
+}
+
 body, html {
   background-color: var(--color-forest-900);
 }

@@ -16,13 +16,10 @@ function App() {
           </div>
 
           <div className="text-off-white z-10 text-left leading-none">
-            {/* <div className="w-full md:w-48 h-1 bg-off-white my-3 mx-auto md:mx-0 block md:hidden"></div> */}
             <p className="text-xl font-bold mt-5 md:mt-0">Hey! I&apos;m</p>
             <h1 className="text-7xl font-emphasize">Jayden</h1>
             <h1 className="text-6xl font-emphasize">Hagerty</h1>
             <div className="w-48 h-1 bg-off-white mt-6 mx-0 animate-width"></div>
-            {/* <h2 className="text-xl font-bold">Software Developer</h2> */}
-            {/* <Carousel /> */}
           </div>
 
           <div className="relative z-10 order-first md:order-last">
@@ -49,13 +46,23 @@ function App() {
 
           <section className="w-full bg-forest-800 flex items-center justify-center">
             <div className="bg-forest-800 flex flex-col md:flex-row items-stretch justify-center w-full max-w-6xl overflow-hidden relative gap-8 p-8">
-              <div
-                className="h-[400px] w-full object-cover rounded-2xl shadow-xl order-last md:order-first bg-black" ></div>
-              <div className="max-w-full md:max-w-sm rounded-2xl text-off-white flex flex-col justify-center text-right">
+              <video
+                poster="/traingame1.png"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+                className="h-[400px] w-full object-cover rounded-2xl shadow-xl"
+              >
+                <source src="/Jayden Site Train Reel.mov" type="video/mp4" />
+              </video>
+
+              <div className="max-w-full md:max-w-sm rounded-2xl text-off-white flex flex-col justify-center ">
                 <h1 className="text-4xl font-emphasize">
                   Software Developer
                 </h1>
-                <div className="my-2 flex gap-2 flex-wrap justify-end">
+                <div className="my-2 flex gap-2 flex-wrap">
                   <Tag text="UVic Student" />
                   <Tag text="Web Designer" />
                   <Tag text="Game Developer" />
@@ -64,7 +71,7 @@ function App() {
                   Programming started as a hobby for me when I was 10 years old. Since then, it&apos;s grown into a career path that I&apos;m incredibly  passionate about! I&apos;ll be graduating from the <b>University of Victoria</b> in 2027 with a Bachelor of Software Engineering.
                 </p>
                 <Link href="/software">
-                  <button className="bg-off-white text-forest-800 px-4 py-2 rounded-full font-semibold transition w-full cursor-pointer">See My Coding Projects</button>
+                  <button className="w-full text-xl logo-button items-center justify-center">See My Coding Projects<img className="h-[16px]" src="right-arrow.png"/></button>
                 </Link>
               </div>
             </div>
@@ -86,7 +93,7 @@ function App() {
                 <p className="font-medium text-justify mb-8">
                   I work on a wide variety of music projects, ranging from game/film soundtracks to singer-songwriter productions. I'm incredbilty fortunate to have amassed over <b>50,000 streams</b> across platforms like Spotify and Apple Music!
                 </p>
-                <button className="bg-off-white text-forest-800 px-4 py-2 rounded-full font-semibold transition">Listen to My Music</button>
+                <button className="w-full text-xl logo-button items-center justify-center">Listen to My Music <img className="h-[16px]" src="right-arrow.png"/></button>
               </div>
               <img 
                 src="music prod placeholder.jpg" 
@@ -96,19 +103,24 @@ function App() {
             </div>
           </section>
 
-
-
-
           <section className="w-full bg-forest-800 flex items-center justify-center">
             <div className="bg-forest-800 flex flex-col md:flex-row items-stretch justify-center w-full max-w-6xl overflow-hidden relative gap-8 p-8">
-              <div className="h-[400px] w-full object-cover rounded-2xl shadow-xl order-last md:order-first overflow-hidden">
-                <YouTubeLoop videoId="zybqV01gWMY" start={126} end={142} />
-              </div>
-              <div className="max-w-full md:max-w-sm rounded-2xl text-off-white flex flex-col justify-center text-right">
+              <video
+                poster="/willem.jpg"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="metadata"
+                className="h-[400px] w-full object-cover rounded-2xl shadow-xl"
+              >
+                <source src="/Jayden Site Film Reel.mov" type="video/mp4" />
+              </video>
+              <div className="max-w-full md:max-w-sm rounded-2xl text-off-white flex flex-col justify-center">
                 <h1 className="text-4xl font-emphasize">
                   Filmmaker and Director
                 </h1>
-                <div className="my-2 flex gap-2 flex-wrap justify-end">
+                <div className="my-2 flex gap-2 flex-wrap">
                   <Tag text="Writer" />
                   <Tag text="Videographer" />
                   <Tag text="Editor" />
@@ -116,7 +128,7 @@ function App() {
                 <p className="font-medium text-justify mb-8">
                   Film is a combination of so many things I love, and I've managed to try unique roles in each project I've been a part of! I&apos;ve directed and produced a variety of short films- I've also been heavily involved in acting roles, script writing, cinematography, sound mixing, and video editing.
                 </p>
-                <button className="bg-off-white text-forest-800 px-4 py-2 rounded-full font-semibold transition">Watch My Films</button>
+                <button className="w-full text-xl logo-button items-center justify-center">Watch My Films <img className="h-[16px]" src="right-arrow.png"/></button>
               </div>
             </div>
           </section>
