@@ -24,13 +24,13 @@ function App() {
             <div className="flex flex-col md:flex-row w-full gap-8 items-start">
               <div className="flex-1">
                 <h1 className="font-bold text-4xl mb-2">Redemption Pocket</h1>
-                <b className="block text-forest-700">Available on web / mobile PWA</b>
-                <div className="flex gap-3 mt-2">
+                <b className="block text-forest-700">Available as a Progressive Web App</b>
+                <div className="flex flex-wrap gap-3 mt-2">
                   <button
                     className="logo-button button text-off-white px-4 py-2 rounded-full font-semibold transition cursor-pointer hover:scale-105 bg-forest-900"
                     onClick={() => setIsModalOpen(true)}
                   >
-                    Get the app!
+                    Get the mobile app!
                   </button>
                   <a
                     className="logo-button text-off-white px-4 py-2 rounded-full font-semibold transition cursor-pointer hover:scale-105 bg-forest-900"

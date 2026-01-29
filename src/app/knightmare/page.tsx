@@ -17,15 +17,15 @@ function App() {
                 {/* <img src="/knightmare logo.png" alt="Knightmare Logo" className="w-full mb-4"/> */}
                 <h1 className="font-bold text-4xl mb-2">Knightmare</h1>
                 <b className="block text-forest-700">Available on PC</b>
-                <div className="flex gap-3 mt-2">
-                <a className="logo-button text-off-white px-4 py-2 rounded-full font-semibold transition cursor-pointer hover:scale-105 bg-forest-900" href="https://store.steampowered.com/app/1414920/Knightmare/" target="_blank">
-                  <img src="/steam_logo.png" className="h-[25px]"/>
-                  Steam
-                </a>
-                <a className="logo-button text-off-white px-4 py-2 rounded-full font-semibold transition cursor-pointer hover:scale-105 bg-forest-900" href="https://www.coolmathgames.com/0-knightmare" target="_blank">
-                  <img src="/cmg_logo.svg" className="h-[25px]"/>
-                  Cool Math Games
-                </a>
+                <div className="flex flex-wrap gap-3 mt-2">
+                  <a className="logo-button text-off-white px-4 py-2 rounded-full font-semibold transition cursor-pointer hover:scale-105 bg-forest-900" href="https://store.steampowered.com/app/1414920/Knightmare/" target="_blank">
+                    <img src="/steam_logo.png" className="h-[25px]"/>
+                    Steam
+                  </a>
+                  <a className="logo-button text-off-white px-4 py-2 rounded-full font-semibold transition cursor-pointer hover:scale-105 bg-forest-900" href="https://www.coolmathgames.com/0-knightmare" target="_blank">
+                    <img src="/cmg_logo.svg" className="h-[25px]"/>
+                    Cool Math Games
+                  </a>
                 </div>
                 <div>
                   <p className="block mt-8"><i>Knightmare</i> is a mouse-controlled puzzle platformer by Jayden Hagerty. Explore 30 carefully crafted levels with the move set of a chess knight and save the Dream Realm from destruction.</p>

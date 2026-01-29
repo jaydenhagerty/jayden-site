@@ -17,11 +17,11 @@ function App() {
                 {/* <img src="/knightmare logo.png" alt="Knightmare Logo" className="w-full mb-4"/> */}
                 <h1 className="font-bold text-4xl mb-2">The Train to Somewhere</h1>
                 <b className="block text-forest-700">Demo available on PC</b>
-                <div className="flex gap-3 mt-2">
-                <a className="logo-button text-off-white px-4 py-2 rounded-full font-semibold transition cursor-pointer hover:scale-105 bg-forest-900" href="https://store.steampowered.com/app/1414920/Knightmare/" target="_blank">
-                  <img src="/itch.io_logo.png" className="h-[25px]"/>
-                  Itch.io
-                </a>
+                <div className="flex flex-wrap gap-3 mt-2">
+                  <a className="logo-button text-off-white px-4 py-2 rounded-full font-semibold transition cursor-pointer hover:scale-105 bg-forest-900" href="https://store.steampowered.com/app/1414920/Knightmare/" target="_blank">
+                    <img src="/itch.io_logo.png" className="h-[25px]"/>
+                    Itch.io
+                  </a>
                 </div>
                 <div>
                   <p className="block mt-8">You've woken up on a mysterious train with no memory of how you got there. Explore, talk to the other passengers, and uncover what lies ahead.</p>
