@@ -4,7 +4,9 @@ import Link from "next/link";
 function App() {
   return (
     <>
-      <section className="min-h-screen bg-black flex items-center justify-center">
+      <section className="min-h-screen bg-black flex flex-col items-center justify-center">
+          <p className="font-emphasize text-off-white text-7xl mb-4">Music</p>
+          <p className="text-off-white text-2xl mb-8">Jayden Hagerty on all platforms</p>
         <div className="bg-forest-950 text-off-white gap-4 rounded-[2rem] md:rounded-[4rem] p-8 md:p-16 flex flex-col md:flex-row items-center justify-center max-w-5xl overflow-hidden relative shadow-xl">
           <a className="cursor-pointer transition duration-100 ease-out hover:-translate-y-[3px]" target="_blank" href="https://open.spotify.com/artist/1mVeJFxcxJ8yLLGrosaQ8y"><img src="spotify_logo.png" className="h-[60px]"/></a>
           <a className="cursor-pointer transition duration-100 ease-out hover:-translate-y-[3px]" target="_blank" href="https://music.apple.com/ca/artist/jayden-hagerty/1702645272"><img src="apple_music_logo.png" className="h-[60px]"/></a>
