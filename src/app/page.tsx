@@ -85,7 +85,9 @@ function App() {
                 <p className="font-medium text-justify mb-8">
                   I work on a wide variety of music projects, ranging from game/film soundtracks to singer-songwriter productions. I'm incredbilty fortunate to have amassed over <b>50,000 streams</b> across platforms like Spotify and Apple Music!
                 </p>
-                <button className="button w-full text-xl logo-button items-center justify-center">Listen to My Music <img className="h-[16px]" src="right-arrow.png"/></button>
+                <Link href="/music">
+                  <button className="button w-full text-xl logo-button items-center justify-center">Listen to My Music <img className="h-[16px]" src="right-arrow.png"/></button>
+                </Link>
               </div>
               <img 
                 src="music prod placeholder.jpg" 
@@ -122,7 +124,9 @@ function App() {
                 <p className="font-medium text-justify mb-8">
                   Film is a combination of so many things I love, and I've managed to try unique roles in each project I've been a part of! I&apos;ve directed and produced a variety of short films- I've also been heavily involved in acting roles, script writing, cinematography, sound mixing, and video editing.
                 </p>
-                <button className="button w-full text-xl logo-button items-center justify-center">Watch My Films <img className="h-[16px]" src="right-arrow.png"/></button>
+                <Link href="/film">
+                  <button className="button w-full text-xl logo-button items-center justify-center">Watch My Films <img className="h-[16px]" src="right-arrow.png"/></button>
+                </Link>
               </div>
             </div>
           </section>
