@@ -24,7 +24,7 @@ function App() {
             <div className="flex flex-col md:flex-row w-full gap-8 items-start">
               <div className="flex-1">
                 <h1 className="font-bold text-4xl mb-2">Redemption Pocket</h1>
-                <b className="block text-forest-700">Available as a Progressive Web App</b>
+                <b className="block text-forest-700">Available on mobile (PWA) and web</b>
                 <div className="flex flex-wrap gap-3 mt-2">
                   <button
                     className="logo-button button text-off-white px-4 py-2 rounded-full font-semibold transition cursor-pointer hover:scale-105 bg-forest-900"
@@ -49,8 +49,10 @@ function App() {
                   </a>
                 </div>
                 <p className="block mt-8">
-                  A digital collectathon for the Redemption trading card game.
+                  <a href="https://landofredemption.com/" target="_blank" className="underline">Redemption</a> is a biblical trading card game that was first published in 1995. <i>Redemption Pocket</i> is a fan-made web app that allows you to collect those cards digitally, for free!
                 </p>
+                <p className="block mt-4"><b>Build your deck by trading cards and opening packs!</b> The engaging currency system allows you to earn and spend gold to enhance your collection.</p>
+                <p className="block mt-4"><b>Collect more than 5,000 unique cards!</b> Think you can get all the Ultra-Rares?</p>
               </div>
               <div className="w-full md:w-3/5 rounded-2xl overflow-hidden shadow-lg">
                 <img
@@ -86,6 +88,9 @@ function App() {
               <>
                 <div className="px-16 py-6">
                   <a href="https://redemptionpocket.web.app/" target="_blank">
+                    <p className="flex justify-center text-xl text-center mb-4">
+                      Head to this link on your mobile device:
+                    </p>
                     <img src="/redemption_qr.png" />
                     <p className="flex justify-center text-xl">
                       redemptionpocket.web.app
