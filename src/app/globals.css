@@ -44,7 +44,7 @@
 }
 
 body, html {
-  background-color: var(--color-forest-900);
+  background-color: black;
 }
 
 @keyframes slideUpFade {
