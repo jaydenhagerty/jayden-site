@@ -47,7 +47,7 @@ function App() {
           <section className="w-full bg-forest-800 flex items-center justify-center">
             <div className="bg-forest-800 flex flex-col md:flex-row items-stretch justify-center w-full max-w-6xl overflow-hidden relative gap-8 p-8">
 
-                <img src="/traingame1.png" className="h-auto w-full object-cover rounded-2xl shadow-xl md:order-first order-last" />
+                <img src="/traingame1.png" className="flex-1 min-w-0 h-auto w-full object-cover rounded-2xl shadow-xl md:order-first order-last" />
             
 
               <div className="max-w-full md:max-w-sm rounded-2xl text-off-white flex flex-col justify-center ">
@@ -110,7 +110,7 @@ function App() {
               >
                 <source src="/Jayden Site Film Reel.mov" type="video/mp4" />
               </video> */}
-              <img src="/willem.jpg" className="h-auto w-full object-cover rounded-2xl shadow-xl md:order-first order-last" />
+              <img src="/willem.jpg" className="flex-1 min-w-0 h-auto w-full object-cover rounded-2xl shadow-xl md:order-first order-last" />
 
               <div className="max-w-full md:max-w-sm rounded-2xl text-off-white flex flex-col justify-center">
                 <h1 className="text-4xl font-emphasize">
