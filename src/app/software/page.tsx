@@ -6,7 +6,7 @@ function App() {
     <>
       <div className="md:p-16 p-8 pt-32 md:pt-32 bg-black">
       {/* <div className="w-full rounded-2xl bg-forest-950 p-8 shadow-xl"></div> */}
-      <p className="font-emphasize text-off-white text-7xl mb-4">Software</p>
+      <p className="font-emphasize text-off-white text-4xl md:text-7xl mb-4">Software</p>
           <p className="text-off-white text-2xl mb-8">Games, websites, and more</p>
         <h1 className="font-bold text-forest-700 text-3xl mb-4 mt-16">Big Projects</h1>
         <section className="w-full grid grid-cols-3 gap-4 grid-cols-[repeat(auto-fit,_minmax(min(100%,_400px),_1fr))]">
